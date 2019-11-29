@@ -1,0 +1,31 @@
+{
+    "name": "webcoms/nova-datepicker",
+    "description": "A flatpickr field for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "flatpickr",
+        "datepicker"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webcoms\\Datepicker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webcoms\\Datepicker\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
