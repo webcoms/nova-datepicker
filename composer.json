@@ -1,6 +1,6 @@
 {
     "name": "webcoms/nova-datepicker",
-    "description": "A flatpickr field for Laravel Nova.",
+    "description": "A datepicker field with week numbers for Laravel Nova using flatpickr.",
     "keywords": [
         "laravel",
         "nova",
