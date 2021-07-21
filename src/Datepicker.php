@@ -18,6 +18,8 @@ class Datepicker extends Field
     public function __construct($name, $attribute = null, $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback ?? function ($value) {
+            if($value == null) return null;
+            
             if (!$value instanceof DateTimeInterface) {
                 throw new Exception("Date field must cast to 'date' in Eloquent model.");
             }
