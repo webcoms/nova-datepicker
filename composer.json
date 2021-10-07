@@ -16,6 +16,8 @@
     ],
     "require": {
         "php": ">=7.2.0",
+        "orchestra/testbench": "~3.8|^4.0",
+        "laravel/nova": "^3.27"
     },
     "autoload": {
         "psr-4": {
