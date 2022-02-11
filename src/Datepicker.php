@@ -2,8 +2,7 @@
 
 namespace Webcoms\Datepicker;
 
-use Exception;
-use DateTimeInterface;
+use Carbon\Carbon;
 use Laravel\Nova\Fields\Field;
 
 class Datepicker extends Field
@@ -18,10 +17,8 @@ class Datepicker extends Field
     public function __construct($name, $attribute = null, $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback ?? function ($value) {
-            if($value == null) return null;
-            
             if (!$value instanceof DateTimeInterface) {
-                throw new Exception("Date field must cast to 'date' in Eloquent model.");
+                $value = Carbon::parse($value);
             }
 
             return $value->format('d.m.Y');
