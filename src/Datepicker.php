@@ -2,7 +2,6 @@
 
 namespace Webcoms\Datepicker;
 
-use Carbon\Carbon;
 use Laravel\Nova\Fields\Field;
 
 class Datepicker extends Field
@@ -18,7 +17,7 @@ class Datepicker extends Field
     {
         parent::__construct($name, $attribute, $resolveCallback ?? function ($value) {
             if (!$value instanceof DateTimeInterface) {
-                $value = Carbon::parse($value);
+                return null;
             }
 
             return $value->format('d.m.Y');
