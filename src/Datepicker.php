@@ -29,23 +29,11 @@ class Datepicker extends Field
         return $this->withMeta([__FUNCTION__=> $bool]);
     }
 
-    /**
-     * Set the date format for Moment.js to display the date.
-     *
-     * @param  string  $format
-     * @return $this
-     */
     public function format($format)
     {
         return $this->withMeta([__FUNCTION__=> $format]);
     }
 
-    /**
-     * Set the date format displayed in the input field.
-     *
-     * @param  string  $format
-     * @return $this
-     */
     public function pickerFormat($format)
     {
         return $this->withMeta([__FUNCTION__=> $format]);
