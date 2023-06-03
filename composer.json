@@ -8,12 +8,6 @@
         "datepicker"
     ],
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    ],
     "require": {
         "php": ">=8.0.0",
         "orchestra/testbench": "^8.3",
@@ -29,6 +23,12 @@
             "Webcoms\\Datepicker\\Tests\\": "tests"
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
